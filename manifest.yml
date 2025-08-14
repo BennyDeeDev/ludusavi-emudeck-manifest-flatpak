@@ -54,6 +54,13 @@
         - save-states
       when:
         - os: linux
+"Eden":
+  files:
+    "<home>/Emulation/storage/eden/nand/user/save/":
+      tags:
+        - save
+      when:
+        - os: linux
 "MAME":
   files:
     "<home>/Emulation/saves/MAME/saves":
