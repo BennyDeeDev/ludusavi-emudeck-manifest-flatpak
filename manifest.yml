@@ -30,6 +30,13 @@
         - save-states
       when:
         - os: linux
+"Citron":
+  files:
+    "<home>/Emulation/storage/citron/nand/user/save/":
+      tags:
+        - save
+      when:
+        - os: linux
 "Dolphin":
   files:
     "<home>/.var/app/org.DolphinEmu.dolphin-emu/data/dolphin-emu":
