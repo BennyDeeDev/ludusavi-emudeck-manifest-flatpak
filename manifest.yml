@@ -1,4 +1,16 @@
 ---
+"Azahar":
+  files:
+    "<home>/Emulation/storage/azahar/sdmc":
+      tags:
+        - save
+      when:
+        - os: linux
+    "<home>/.local/share/azahar-emu/states":
+      tags:
+        - save-states
+      when:
+        - os: linux
 "Cemu":
   files:
     "<home>/Emulation/roms/wiiu/mlc01/usr/save":
@@ -16,6 +28,13 @@
     "<home>/.var/app/org.citra_emu.citra/data/citra-emu/states":
       tags:
         - save-states
+      when:
+        - os: linux
+"Citron":
+  files:
+    "<home>/Emulation/storage/citron/nand/user/save/":
+      tags:
+        - save
       when:
         - os: linux
 "Dolphin":
@@ -40,6 +59,13 @@
     "<home>/Emulation/saves/duckstation/states":
       tags:
         - save-states
+      when:
+        - os: linux
+"Eden":
+  files:
+    "<home>/Emulation/storage/eden/nand/user/save/":
+      tags:
+        - save
       when:
         - os: linux
 "MAME":
