@@ -1,4 +1,16 @@
 ---
+"Azahar":
+  files:
+    "<home>/Emulation/storage/azahar/sdmc":
+      tags:
+        - save
+      when:
+        - os: linux
+    "<home>/.local/share/azahar-emu/states":
+      tags:
+        - save-states
+      when:
+        - os: linux
 "Cemu":
   files:
     "<home>/Emulation/roms/wiiu/mlc01/usr/save":
