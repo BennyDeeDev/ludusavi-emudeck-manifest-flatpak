@@ -183,6 +183,18 @@
         - save-meta
       when:
         - os: linux
+"Ryujinx Flatpak (io.github.ryubing)":
+  files:
+    "<home>/.var/app/io.github.ryubing.Ryujinx/config/Ryujinx/bis/user/save":
+      tags:
+        - save
+      when:
+        - os: linux
+    <home>/.var/app/io.github.ryubing.Ryujinx/config/Ryujinx/bis/user/saveMeta":
+      tags:
+        - save-meta
+      when:
+        - os: linux
 "ScummVM":
   files:
     "<home>/Emulation/saves/scummvm/saves":
