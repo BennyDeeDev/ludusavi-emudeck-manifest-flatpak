@@ -1,188 +1,58 @@
 ---
-"Azahar":
+"Azahar Flatpak (org.azahar_emu.Azahar)":
   files:
-    "<home>/Emulation/storage/azahar/sdmc":
-      tags:
-        - save
-      when:
-        - os: linux
-    "<home>/.local/share/azahar-emu/states":
-      tags:
-        - save-states
-      when:
-        - os: linux
-"Cemu":
+    "<home>/.var/app/org.azahar_emu.Azahar/data/azahar/sdmc":
+      tags: [save]
+      when: [ { os: linux } ]
+    "<home>/.var/app/org.azahar_emu.Azahar/data/azahar/load":
+      tags: [save-states]
+      when: [ { os: linux } ]
+
+"Cemu Flatpak (info.cemu.Cemu)":
   files:
-    "<home>/Emulation/roms/wiiu/mlc01/usr/save":
-      tags:
-        - save
-      when:
-        - os: linux
-"Citra":
+    "<home>/.var/app/info.cemu.Cemu/data/Cemu/mlc01/usr/save":
+      tags: [save]
+      when: [ { os: linux } ]
+
+"DuckStation Flatpak (org.duckstation.DuckStation)":
   files:
-    "<home>/.var/app/org.citra_emu.citra/data/citra-emu/sdmc":
-      tags:
-        - save
-      when:
-        - os: linux
-    "<home>/.var/app/org.citra_emu.citra/data/citra-emu/states":
-      tags:
-        - save-states
-      when:
-        - os: linux
-"Citron":
+    "<home>/.var/app/org.duckstation.DuckStation/config/duckstation/memcards":
+      tags: [save]
+      when: [ { os: linux } ]
+    "<home>/.var/app/org.duckstation.DuckStation/config/duckstation/savestates":
+      tags: [save-states]
+      when: [ { os: linux } ]
+
+"MAME Flatpak (org.mamedev.MAME)":
   files:
-    "<home>/Emulation/storage/citron/nand/user/save/":
-      tags:
-        - save
-      when:
-        - os: linux
-"Dolphin":
+    "<home>/.var/app/org.mamedev.MAME/data/mame/nvram":
+      tags: [save]
+      when: [ { os: linux } ]
+    "<home>/.var/app/org.mamedev.MAME/data/mame/sta":
+      tags: [save-states]
+      when: [ { os: linux } ]
+
+"PCSX2 Flatpak (net.pcsx2.PCSX2)":
   files:
-    "<home>/.var/app/org.DolphinEmu.dolphin-emu/data/dolphin-emu":
-      tags:
-        - save
-      when:
-        - os: linux
-    "<home>/.var/app/org.DolphinEmu.dolphin-emu/data/dolphin-emu/StateSaves":
-      tags:
-        - save-states
-      when:
-        - os: linux
-"DuckStation":
+    "<home>/.var/app/net.pcsx2.PCSX2/config/PCSX2/memcards":
+      tags: [save]
+      when: [ { os: linux } ]
+    "<home>/.var/app/net.pcsx2.PCSX2/config/PCSX2/sstates":
+      tags: [save-states]
+      when: [ { os: linux } ]
+
+"RPCS3 Flatpak (net.rpcs3.RPCS3)":
   files:
-    "<home>/Emulation/saves/duckstation/saves":
-      tags:
-        - save
-      when:
-        - os: linux
-    "<home>/Emulation/saves/duckstation/states":
-      tags:
-        - save-states
-      when:
-        - os: linux
-"Eden":
+    "<home>/.var/app/net.rpcs3.RPCS3/data/rpcs3/dev_hdd0/home/00000001/savedata":
+      tags: [save]
+      when: [ { os: linux } ]
+
+"Xemu Flatpak (app.xemu.xemu)":
   files:
-    "<home>/Emulation/storage/eden/nand/user/save/":
-      tags:
-        - save
-      when:
-        - os: linux
-"MAME":
-  files:
-    "<home>/Emulation/saves/MAME/saves":
-      tags:
-        - save
-      when:
-        - os: linux
-    "<home>/Emulation/saves/MAME/states":
-      tags:
-        - save-states
-      when:
-        - os: linux
-"melonDS":
-  files:
-    "<home>/Emulation/saves/melonds/saves":
-      tags:
-        - save
-      when:
-        - os: linux
-    "<home>/Emulation/saves/melonds/states":
-      tags:
-        - save-states
-      when:
-        - os: linux
-"mGBA":
-  files:
-    "<home>/Emulation/saves/mgba/saves":
-      tags:
-        - save
-      when:
-        - os: linux
-    "<home>/Emulation/saves/mgba/states":
-      tags:
-        - save-states
-      when:
-        - os: linux
-"PCSX2":
-  files:
-    "<home>/Emulation/saves/pcsx2/saves":
-      tags:
-        - save
-      when:
-        - os: linux
-    "<home>/Emulation/saves/pcsx2/states":
-      tags:
-        - save-states
-      when:
-        - os: linux
-"PPSSPP":
-  files:
-    "<home>/.var/app/org.ppsspp.PPSSPP/config/ppsspp/PSP/SAVEDATA":
-      tags:
-        - save
-      when:
-        - os: linux
-    "<home>/.var/app/org.ppsspp.PPSSPP/config/ppsspp/PSP/PPSSPP_STATE":
-      tags:
-        - save-states
-      when:
-        - os: linux
-"PrimeHack":
-  files:
-    "<home>/.var/app/io.github.shiiion.primehack/data/dolphin-emu/Wii":
-      tags:
-        - save
-      when:
-        - os: linux
-    "<home>/.var/app/io.github.shiiion.primehack/data/dolphin-emu/StateSaves":
-      tags:
-        - save-states
-      when:
-        - os: linux
-"RetroArch":
-  files:
-    "<home>/.var/app/org.libretro.RetroArch/config/retroarch/saves":
-      tags:
-        - save
-      when:
-        - os: linux
-    "<home>/.var/app/org.libretro.RetroArch/config/retroarch/states":
-      tags:
-        - save-states
-      when:
-        - os: linux
-"Rosalie's Mupen GUI":
-  files:
-    "<home>/Emulation/saves/RMG/saves":
-      tags:
-        - save
-      when:
-        - os: linux
-    "<home>/Emulation/saves/RMG/states":
-      tags:
-        - save-states
-      when:
-        - os: linux
-"RPCS3":
-  files:
-    "<home>/Emulation/storage/rpcs3/dev_hdd0/home/00000001/savedata":
-      tags:
-        - save
-      when:
-        - os: linux
-"Ryujinx":
-  files:
-    "<home>/.config/Ryujinx/bis/user/save":
-      tags:
-        - save
-      when:
-        - os: linux
-    "<home>/.config/Ryujinx/bis/user/saveMeta":
-      tags:
-        - save-meta
-      when:
-        - os: linux
+    "<home>/.var/app/app.xemu.xemu/data/xemu/xemu":
+      tags: [save]            # xemu HDD/snapshots live under here in Flatpak
+      when: [ { os: linux } ]
+
 "Ryujinx Flatpak (io.github.ryubing)":
   files:
     "<home>/.var/app/io.github.ryubing.Ryujinx/config/Ryujinx/bis/user/save":
@@ -195,38 +65,12 @@
         - save-meta
       when:
         - os: linux
-"ScummVM":
+
+"Ryujinx Flatpak (org.ryujinx.Ryujinx) [EOL]":
   files:
-    "<home>/Emulation/saves/scummvm/saves":
-      tags:
-        - save
-      when:
-        - os: linux
-"Vita3K":
-  files:
-    "<home>/Emulation/storage/Vita3K/ux0/user/00/savedata":
-      tags:
-        - save
-      when:
-        - os: linux
-"Xemu":
-  files:
-    "<home>/Emulation/storage/xemu":
-      tags:
-        - save
-      when:
-        - os: linux
-"Xenia":
-  files:
-    "<home>/Emulation/roms/xbox360/content":
-      tags:
-        - save
-      when:
-        - os: linux
-"Yuzu":
-  files:
-    "<home>/Emulation/storage/yuzu/nand/user/save/":
-      tags:
-        - save
-      when:
-        - os: linux
+    "<home>/.var/app/org.ryujinx.Ryujinx/config/Ryujinx/bis/user/save":
+      tags: [save]
+      when: [ { os: linux } ]
+    "<home>/.var/app/org.ryujinx.Ryujinx/config/Ryujinx/bis/user/saveMeta":
+      tags: [save-meta]
+      when: [ { os: linux } ]
