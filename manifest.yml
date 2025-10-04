@@ -50,7 +50,7 @@
 "Xemu Flatpak (app.xemu.xemu)":
   files:
     "<home>/.var/app/app.xemu.xemu/data/xemu/xemu":
-      tags: [save]            # xemu HDD/snapshots live under here in Flatpak
+      tags: [save]
       when: [ { os: linux } ]
 
 "Ryujinx Flatpak (io.github.ryubing)":
