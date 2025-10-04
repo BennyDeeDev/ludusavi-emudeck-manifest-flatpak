@@ -1,21 +1,24 @@
-# ludusavi-emudeck-manifest
-Additional [Ludusavi](https://github.com/mtkennerly/ludusavi) manifest for finding save location of emulators based on information on the [emudeck wiki.](https://emudeck.github.io/save-management/steamos/save-management/)
+# ludusavi-emudeck-manifest flatpak (fork)
 
-## How To Us:
+Additional [Ludusavi](https://github.com/mtkennerly/ludusavi) manifest for locating emulator saves/state files, with **broader Flatpak coverage** and paths aligned to the EmuDeck layout. Based on the [EmuDeck wiki](https://emudeck.github.io/save-management/steamos/save-management/) plus extra research and testing.
 
-### 1. Add manifest to Ludusavi
+## How to use
 
-You can add the manifest in the "other" tab and adding the new manifest to the list.
+### 1) Add this manifest to Ludusavi
 
-Link to add: https://raw.githubusercontent.com/hblamo/ludusavi-emudeck-manifest/main/manifest.yml
+In Ludusavi: **Other → Manifests → Add** and paste:
 
+```
+https://raw.githubusercontent.com/hblamo/ludusavi-emudeck-manifest/main/manifest.yml
+```
 
+(You can add multiple manifests; ours is additive and safe.)
 
-### 2. Update roots (if needed)
+### 2) Update roots (if needed)
 
-If you've installed Emudeck on a seperate drive (or SD card), you'll want to make sure that drive is configured as a "home folder" in Ludusavi. I just duplicated my SD card location. So I had 2, one configured as a steam drive and one configured as a home folder.
+If EmuDeck is on another drive/SD card, add that mount as a **Home folder** in Ludusavi so paths under `Emulation/…` resolve correctly.
+Tip: keep two roots for the card—one as **Steam** and one as **Home**—to cover both styles used by different tools.
 
+## What this fork adds
 
-## Known issues:
-
-Windows is not setup to work. If anyone is interested in this, just setup a PR and we can figure it out together.
+* **Flatpak variants** for popular cores where Flathub packages exist (e.g., Citra, Dolphin, DuckStation, MAME, PCSX2, PPSSPP, PrimeHack, RetroArch, RPCS3, Xemu, Cemu, Ryujinx variants).
