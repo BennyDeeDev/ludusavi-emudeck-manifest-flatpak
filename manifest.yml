@@ -56,15 +56,11 @@
 "Ryujinx Flatpak (io.github.ryubing)":
   files:
     "<home>/.var/app/io.github.ryubing.Ryujinx/config/Ryujinx/bis/user/save":
-      tags:
-        - save
-      when:
-        - os: linux
+      tags: [save]
+      when: [ { os: linux } ]
     "<home>/.var/app/io.github.ryubing.Ryujinx/config/Ryujinx/bis/user/saveMeta":
-      tags:
-        - save-meta
-      when:
-        - os: linux
+      tags: [save-meta]
+      when: [ { os: linux } ]
 
 "Ryujinx Flatpak (org.ryujinx.Ryujinx) [EOL]":
   files:
